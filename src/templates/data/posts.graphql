@@ -1,0 +1,28 @@
+query {
+  getPostList {
+    total
+    items {
+      _contentTypeName
+      _enabledAt
+      title
+      dek
+      author {
+        name
+      }
+      associatedBook {
+        title
+        publishDate
+        totalPages
+        type
+        genre {
+          title
+        }
+      }
+      featuredImage {
+        s3Key
+      }
+      body
+      bodyHtml
+    }
+  }
+}

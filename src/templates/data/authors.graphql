@@ -1,0 +1,25 @@
+query {
+  page: getAuthorList {
+    total
+    items {
+      name
+      photo {
+        s3Key
+      }
+      genre {
+        title
+      }
+      biography
+      biographyHtml
+      authored {
+        total
+        results {
+          title
+          coverImage {
+            s3Key
+          }
+        }
+      }
+    }
+  }
+}

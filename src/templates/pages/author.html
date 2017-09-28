@@ -1,0 +1,44 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<div class="container">
+  <article class="author">
+    <header class="author-header">
+      <h1>{{ author.name }}</h1>
+    </header>
+    <div>
+      <div class="author-wrap">
+        <div class="author-meta">
+          <div class="author-photo">
+            <img src="{{ author.photo.s3Key | image }}">
+          </div>
+          <p class="author-genre">
+            {% for genre in author.genre %}
+              {{ genre.title }}{% if not loop.last %},{% endif %}
+            {% endfor %}
+          </p>
+        </div>
+        <div class="post-content">
+          {{ author.biographyHtml | safe }}
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div class="author-books">
+    <h2 class="heading">Books by {{ author.name }}</h2>
+    <ul>
+      {% for book in author.authored.results %}
+      <li class="book-tout">
+        <a href="{{ book | route('books') }}">
+          <div class="book-image">
+            <img src="{{ book.coverImage.s3Key | image }}">
+          </div>
+          <h3>{{ book.title }}</h3>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

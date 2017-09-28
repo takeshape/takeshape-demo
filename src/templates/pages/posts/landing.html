@@ -1,0 +1,35 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<section>
+  <div class="container">
+    <div class="all-posts">
+      <header>
+        <h1 class="heading">All Posts</h1>
+      </header>
+      <ul class="posts">
+        {% for post in items %}
+        <li class="post-tout">
+          <a href="{{ post | route('posts') }}">
+            <div class="section">
+              <div class="image-container">
+                <img src="{{ post.featuredImage | image }}" alt="Novel Image">
+              </div>
+            </div>
+            <div class="section">
+              <h3>{{ post.title }}</h3>
+              <p><time>{{ post._enabledAt | date("MMMM D, YYYY") }}</time></p>
+              <p>{{ post.dek }}</p>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      {% include "partials/pagination.html" %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/our-books.html" %}
+{% endblock %}

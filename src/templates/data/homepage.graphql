@@ -1,0 +1,39 @@
+query {
+  page: getHomepage {
+    title
+    hero {
+      image {
+        s3Key
+      }
+      featuredPost {
+        title
+        author {
+          name
+        }
+      }
+    }
+    featuredBook {
+      title
+      author {
+        name
+      }
+      genre {
+        title
+      }
+      coverImage {
+        s3Key
+      }
+    }
+  }
+  posts: getPostList {
+    total
+    items {
+      title
+      _enabledAt
+      dek
+      featuredImage {
+        s3Key
+      }
+    }
+  }
+}

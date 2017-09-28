@@ -1,0 +1,73 @@
+{% extends "layouts/default.html" %}
+
+{% block content %}
+<section>
+  <div class="hero" style="background-image: url('{{ page.hero.image | image }}');">
+    <div class="container">
+      <a href="{{ page.hero.featuredPost | route('posts') }}">
+        <article>
+          <p>New Series Release:</p>
+          <h1>{{ page.hero.featuredPost.title }}</h1>
+          <p>by {{ page.hero.featuredPost.author.name }}</p>
+        </article>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="featured-novel">
+      <header>
+        <h2 class="heading">Featured Novel</h2>
+      </header>
+      <article>
+        <div class="section">
+          {% set featuredBook = page.featuredBook %}
+          <h3>{{ featuredBook.title }}</h3>
+          <p>{{ featuredBook.genre.title }}</p>
+          <a class="button" href="{{ featuredBook | route('books') }}">Learn More ></a>
+        </div>
+        <div class="section">
+          <div class="featured-novel-container">
+            <img src="{{ featuredBook.coverImage.s3Key | image }}" alt="{{ featuredBook.title }}">
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="featured-posts">
+      <header>
+        <h2 class="heading">Featured Posts</h2>
+      </header>
+      <ul>
+        {% for post in posts.items.slice(0, 3) %}
+        <li class="post-tout">
+          <a href="{{ post | route('posts') }}">
+            <div class="section">
+              <div class="image-container">
+                <img src="{{ post.featuredImage.s3Key | image }}" alt="{{ post.title }}">
+              </div>
+            </div>
+            <div class="section">
+              <h3>{{ post.title }}</h3>
+              <p><time>{{ post._enabledAt | date('MMMM D') }}</time></p>
+              <p>{{ post.dek }}</p>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="button-container">
+        <a class="button" href="/blog">View all posts</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "partials/our-books.html" %}
+{% endblock %}
