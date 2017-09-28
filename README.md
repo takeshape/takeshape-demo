@@ -1,12 +1,12 @@
-# TakeShape Scaffolding
-This is a scaffolding project to help get you started building a static website with TakeShape (TS). 
+# Shape Books a TakeShape Demo
+This is a demo project to help get you started building a static website with TakeShape (TS). 
 
 
 ## Quickstart
 *If you're using Atom or JetBrains as your IDE we recommend using graphql-config https://graphcool.github.io/graphql-config/. This plugin allows for real time validation of your queries against the schema you define in TS though modeling*
  
 1. On TS set up a project and then configure a static site 
-2. `git clone https://github.com/takeshape/takeshape-scaffold-webpack.git [YOUR-PROJECT-NAME]`
+2. `git clone https://github.com/takeshape/takeshape-demo [YOUR-PROJECT-NAME]`
 3. `cd` to [YOUR-PROJECT-NAME]
 4. `yarn install` - This will install all dependencies including the takeshape-cli `tsg` (If you want to install TS CLI globally `npm install -g takeshape-cli`)
 5. `yarn add takeshape-cli` Make sure you're using the latest version of takeshape-cli 
