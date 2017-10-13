@@ -1,5 +1,5 @@
 query {
-  getPostList {
+  getPostList(sort: [{field: "_enabledAt", order: "desc"}]) {
     total
     items {
       _contentTypeName
