@@ -7,9 +7,8 @@
       <h1>{{ post.title }}</h1>
       <a class="author-link" href="{{ post.author | route('authors') }}">{{ post.author.name }}</a>
       <div class="meta">
-        <p>{{ post.associatedBook.totalPages }} pages || {{ post.associatedBook.type | title }} || {{ post.associatedBook.publishDate | date('MMMM D, YYYY') }}</p>
+        <p>{{ post.associatedBook.title }} | {{ post.associatedBook.genre.title | upper }}</p>
       </div>
-      <p class="genre">{{ post.associatedBook.genre.title | upper }}</p>
     </header>
     <div class="post-content">
       {{ post.bodyHtml | safe }}
