@@ -13,7 +13,6 @@ query {
       author {
         name
       }
-      body
       bodyHtml
       coverImage {
         s3Key

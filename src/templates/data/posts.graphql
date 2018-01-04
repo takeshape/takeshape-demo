@@ -21,7 +21,6 @@ query {
       featuredImage {
         s3Key
       }
-      body
       bodyHtml
     }
   }
