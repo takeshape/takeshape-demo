@@ -15,6 +15,7 @@ This is a demo project to help get you started building a static website with Ta
 
 
 ## Deploying your templates
+When you are done tinkering and are ready to put your site online follow these steps:
 1. Configure a Static Site in the TakeShape webapp.
     1. Open your project in TakeShape
     1. Click on "Static Sites" from the project dropdown menu.
