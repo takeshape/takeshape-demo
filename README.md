@@ -3,16 +3,31 @@ This is a demo project to help get you started building a static website with Ta
 
 
 ## Quickstart
-*If you're using JetBrains we recommend using the  [JS GraphQL plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin). This plugin allows for real time validation of your queries against the schema you define in TS though modeling*
  
-1. On TS set up a project and then configure a static site 
-2. `git clone https://github.com/takeshape/takeshape-demo [YOUR-PROJECT-NAME]`
-3. `cd` to [YOUR-PROJECT-NAME]
-4. `yarn install` - This will install all dependencies including the takeshape-cli `tsg` (If you want to install TS CLI globally `npm install -g takeshape-cli`)
-5. `yarn add takeshape-cli` Make sure you're using the latest version of takeshape-cli 
-6. `yarn run init` - Follow the command prompts to set up your local environment to communicate with TS
-7. `yarn run start` -  The server runs on [http://localhost:5000](http://localhost:5000) by default
-8. `yarn run deploy` - Deploy your site to TS!
+1. `git clone https://github.com/takeshape/takeshape-demo [YOUR-PROJECT-NAME]`
+1. `cd` to [YOUR-PROJECT-NAME]
+1. `yarn install` - This will install all dependencies 
+1. `yarn run init` - Follow the command prompts to set up your local environment to communicate with TS
+1. `yarn run start` -  The server runs on [http://localhost:5000](http://localhost:5000) by default
+1. Have fun playing around with the sample site!
+    - Change some markup a template file and the site will regenerate automatically
+    - Try adding a new field to an existing content type then add it to the corresponding GraphQL query and template
+
+
+## Deploying your templates
+1. Configure a Static Site in the TakeShape webapp.
+    1. Open your project in TakeShape
+    1. Click on "Static Sites" from the project dropdown menu.
+    1. Click the "NEW STATIC SITE" button.
+    1. Give your site a name such as "Production" or "Staging"
+    1. Select your "Provider" and enter in the appropriate credentials.
+1. Use the CLI to point your local development folder to the static site you just created.
+    - `yarn run init` - Follow the command prompts
+1. Use the CLI to deploy your templates! 
+    - `yarn run deploy` - Deploy your site to TS!
+1. Once the templates are deployed TakeShape will generate HTML and push your website to the configured provider
+    - Check your bucket/webserver to see the fruits of your labor
+    - Additional publishes can be triggered using the "Deploy <sitename>" in the project menu    
 
 ## Project Structure
 Files and directories in this repo are designed to get you up and running with TS in seconds. After you poke around a bit you'll see how easy it is to lay in your own build processes and tools. One of the core concepts of TS is to do just enough and provide just enough structure to make your life easier without getting in your way. We want you to be creative. 
@@ -50,19 +65,6 @@ routes:                       #Routes tell TS which template to join with which 
     context: data/homepage.graphql
 ...    
  ```
-
-### General Configuration 
-- `.gitignore` - What files to ignore if you're using git (you should use some form of version control, if you aren't you're doing it wrong).
-- `.eslintrc` - JS linting
-- `.eslintrc` - JS linting
-- `.stylelinerc` - CSS linting rules [https://github.com/stylelint/stylelint](https://github.com/stylelint/stylelint).
-- `postcss.config.js` - Basic config for postcss.
-- `.editorcconfig` - Maintain a consistent coding style [http://editorconfig.org/](https://github.com/stylelint/stylelint).
-- `webpack.config.js` - Compile JS and CSS and provide cache busting
- 
-### Dependency Management
-- `yarn.lock` -  Generated through`yarn install`
-- `package.json` - Serves two purposes, identifies the packages that will be installed when you run `yarn install`. Secondly establishes the various commands that can be executed by `yarn run` ex- `yarn run init`, or `yarn run start`, and `yarn run deploy`. You can add your own commands here to create your own build process. Or you can use a completely different build system like gulp or grunt.   
 
 ## Templating
 TS uses the Nunjucks templating language. You can find detailed documentation on the Nunjucks site: (https://mozilla.github.io/nunjucks/templating.html
@@ -102,6 +104,8 @@ TS uses the Nunjucks templating language. You can find detailed documentation on
   ```
   Formats dates using [moment.js](https://momentjs.com/). `format` can be either a [format string](https://momentjs.com/docs/#/displaying/format/) or an object where you can specify a format and override the default timezone and locale (configured in `tsg.yml`).
 
+## GraphQL tips
+*If you're using JetBrains we recommend using the  [JS GraphQL plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin). This plugin allows for real time validation of your queries against the schema you define in TS though modeling*
 
 ## Reach out
 If we can make your life easier we want to hear from you at [support@takeshape.io](mailto:support@takeshape.io)
