@@ -3,7 +3,7 @@ This is a demo project to help get you started building a static website with Ta
 
 
 ## Quickstart
-*If you're using Atom or JetBrains as your IDE we recommend using graphql-config https://graphcool.github.io/graphql-config/. This plugin allows for real time validation of your queries against the schema you define in TS though modeling*
+*If you're using JetBrains we recommend using the  [JS GraphQL plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin). This plugin allows for real time validation of your queries against the schema you define in TS though modeling*
  
 1. On TS set up a project and then configure a static site 
 2. `git clone https://github.com/takeshape/takeshape-demo [YOUR-PROJECT-NAME]`
