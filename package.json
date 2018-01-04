@@ -1,5 +1,5 @@
 {
-  "name": "takeshape-scaffold-webpack",
+  "name": "takeshape-demo",
   "version": "1.1.0",
   "description": "Starter Project for Takeshape",
   "author": {
@@ -7,13 +7,13 @@
     "email": "andrew@takeshape.io"
   },
   "license": "MIT",
-  "homepage": "https://github.com/takeshape/takeshape-scaffold-webpack",
+  "homepage": "https://github.com/takeshape/takeshape-demo",
   "repository": {
     "type": "git",
-    "url": "git://github.com/takeshape/takeshape-scaffold-webpack.git"
+    "url": "git://github.com/takeshape/takeshape-demo.git"
   },
   "bugs": {
-    "url": "https://github.com/takeshape/takeshape-scaffold-webpack"
+    "url": "https://github.com/takeshape/takeshape-demo"
   },
   "engines": {
     "node": ">= 6.10"
