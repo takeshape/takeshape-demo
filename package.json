@@ -30,6 +30,6 @@
   "devDependencies": {
     "browser-sync": "^2.15.0",
     "npm-run-all": "^3.1.0",
-    "takeshape-cli": "^4.8.3"
+    "takeshape-cli": "^4.11.0"
   }
 }

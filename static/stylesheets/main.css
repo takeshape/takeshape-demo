@@ -215,6 +215,7 @@ small {
 .page-footer {
   background-color: #f1f1f1;
   padding: 4rem 0;
+  text-align: center;
 }
 
 /* Hero */
@@ -347,6 +348,7 @@ small {
 .author-books ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .author-books li {
@@ -541,6 +543,11 @@ small {
 .post-content .credit {
   font-weight: 600;
   text-align: right;
+}
+
+.post-content figure.center img {
+  margin: 0 auto;
+  display: block;
 }
 
 .post-content figure figcaption {

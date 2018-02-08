@@ -14,9 +14,6 @@ query {
         publishDate
         totalPages
         type
-        genre {
-          title
-        }
       }
       featuredImage {
         s3Key

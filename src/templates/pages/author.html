@@ -12,11 +12,6 @@
           <div class="author-photo">
             <img src="{{ author.photo.s3Key | image }}">
           </div>
-          <p class="author-genre">
-            {% for genre in author.genre %}
-              {{ genre.title }}{% if not loop.last %},{% endif %}
-            {% endfor %}
-          </p>
         </div>
         <div class="post-content">
           {{ author.biographyHtml | safe }}

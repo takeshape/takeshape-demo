@@ -6,9 +6,6 @@ query {
       photo {
         s3Key
       }
-      genre {
-        title
-      }
       biography
       biographyHtml
       authored {
