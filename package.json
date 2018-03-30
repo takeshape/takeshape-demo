@@ -23,13 +23,13 @@
     "serve": "browser-sync start --server build --port 5000 --files 'build/**/*' --reload-debounce",
     "build": "tsg build",
     "deploy": "tsg deploy",
-    "watch:tsg": "tsg watch",
+    "watch:tsg": "tsg watch -W",
     "watch": "npm-run-all --serial build && npm-run-all --continue-on-error --parallel watch:* serve",
     "start": "npm run watch"
   },
   "devDependencies": {
     "browser-sync": "^2.15.0",
     "npm-run-all": "^3.1.0",
-    "takeshape-cli": "^4.11.0"
+    "takeshape-cli": "^4.18.1"
   }
 }
