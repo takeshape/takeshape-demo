@@ -1,5 +1,5 @@
 # Shape Books a TakeShape Demo
-This is a demo project to help get you started building a static website with TakeShape (TS). You can see the demo project in action here: http://shapebooks.s3-website-us-east-1.amazonaws.com/
+This is a demo project to help get you started building a static website with TakeShape (TS). You can see the demo project in action here: http://www.takeshapesampleproject.com/
 
 
 ## Quickstart
