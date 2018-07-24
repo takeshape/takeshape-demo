@@ -10,21 +10,21 @@
 
     {% for post in posts.items %}
     <url>
-        <loc>http://www.takeshapesampleproject.com/blog{{ post|route('posts') }}</loc>
+        <loc>http://www.takeshapesampleproject.com{{ post|route('posts') }}</loc>
         <lastmod>{{ post._updatedAt }}</lastmod>
     </url>
     {% endfor %}
 
     {% for book in books.items %}
         <url>
-            <loc>http://www.takeshapesampleproject.com/books{{ book|route('books') }}</loc>
+            <loc>http://www.takeshapesampleproject.com{{ book|route('books') }}</loc>
             <lastmod>{{ book._updatedAt }}</lastmod>
         </url>
     {% endfor %}
 
     {% for author in authors.items %}
         <url>
-            <loc>http://www.takeshapesampleproject.com/authors{{ author|route('authors') }}</loc>
+            <loc>http://www.takeshapesampleproject.com{{ author|route('authors') }}</loc>
             <lastmod>{{ author._updatedAt }}</lastmod>
         </url>
     {% endfor %}
