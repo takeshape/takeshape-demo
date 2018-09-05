@@ -13,7 +13,7 @@ query {
         name
       }
       coverImage {
-        s3Key
+        path
       }
     }
   }

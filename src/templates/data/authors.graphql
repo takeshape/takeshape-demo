@@ -4,16 +4,16 @@ query {
     items {
       name
       photo {
-        s3Key
+        path
       }
       biography
       biographyHtml
       authored {
         total
-        results {
+        items {
           title
           coverImage {
-            s3Key
+            path
           }
         }
       }

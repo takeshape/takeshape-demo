@@ -3,7 +3,7 @@ query {
     title
     hero {
       image {
-        s3Key
+        path
       }
       featuredPost {
         title
@@ -21,7 +21,7 @@ query {
         title
       }
       coverImage {
-        s3Key
+        path
       }
     }
   }
@@ -30,9 +30,9 @@ query {
     items {
       title
       _enabledAt
-      dek
-      featuredImage {
-        s3Key
+      deck
+      featureImage {
+        path
       }
     }
   }

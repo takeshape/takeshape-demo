@@ -1,10 +1,10 @@
 {
-  "name": "takeshape-demo",
-  "version": "1.1.0",
-  "description": "Starter Project for Takeshape",
+  "name": "takeshape-shape-books",
+  "version": "1.2.0",
+  "description": "Shape Books - A Sample Project for TakeShape - www.takeshape.io",
   "author": {
-    "name": "Andrew Sprouse",
-    "email": "andrew@takeshape.io"
+    "name": "TakeShape",
+    "email": "contact@takeshape.io"
   },
   "license": "MIT",
   "homepage": "https://github.com/takeshape/takeshape-demo",
@@ -16,7 +16,7 @@
     "url": "https://github.com/takeshape/takeshape-demo"
   },
   "engines": {
-    "node": ">= 6.10"
+    "node": ">= 8.10"
   },
   "scripts": {
     "init": "tsg init",
@@ -28,8 +28,11 @@
     "start": "npm run watch"
   },
   "devDependencies": {
-    "browser-sync": "^2.15.0",
+    "browser-sync": "^2.24.7",
+    "eslint": "^5.5.0",
     "npm-run-all": "^3.1.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended": "^2.1.0",
     "takeshape-cli": "^4.33.0"
   }
 }

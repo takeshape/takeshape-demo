@@ -6,15 +6,13 @@
       </header>
       <ul>
         {% for book in site.books.items.slice(0, 4) %}
-        <li class="book-tout">
-          <a href="{{ book | route('books') }}">
-            <div class="book-image">
-              <img src="{{ book.coverImage.s3Key | image }}">
-            </div>
-            <h3>{{ book.title }}</h3>
-            <p>{{ book.author.name }}</p>
-          </a>
-        </li>
+          <li class="book-tout">
+            <a href="{{ book | route('books') }}">
+              <img class="book-tout__image" src="{{ book.coverImage.path | image }}">
+              <h3>{{ book.title }}</h3>
+              <p>{{ book.author.name }}</p>
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </div>

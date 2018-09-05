@@ -17,37 +17,38 @@
     <ul class="pagination__list">
       <li><a {% if pagination.currentPage== 1 %}class="is-disabled"
              {% else %}href="{% if previousPage == 1 %}{{ paginationFirstPage }}{% else %}{{ previousPage | route(paginationString) }}{% endif %}"
-             {% endif %}><</a></li>
+          {% endif %}><</a></li>
 
-      <li><a {% if pagination.currentPage== firstPage %}class="is-current" {% else %}href="{{ paginationFirstPage }}" {% endif %}>1</a>
+      <li><a {% if pagination.currentPage== firstPage %}class="is-current"
+             {% else %}href="{{ paginationFirstPage }}" {% endif %}>1</a>
       </li>
 
       {% if pagination.currentPage > 4 %}
-      <li>&hellip;</li>
+        <li>&hellip;</li>
       {% endif %}
 
       {% if pagination.currentPage > 3 %}
-      <li><a href="{{ farPreviousPage | route(paginationString) }}">{{ farPreviousPage }}</a></li>
+        <li><a href="{{ farPreviousPage | route(paginationString) }}">{{ farPreviousPage }}</a></li>
       {% endif %}
 
       {% if pagination.currentPage > 2 %}
-      <li><a href="{{ previousPage | route(paginationString) }}">{{ previousPage }}</a></li>
+        <li><a href="{{ previousPage | route(paginationString) }}">{{ previousPage }}</a></li>
       {% endif %}
 
       {% if pagination.currentPage == firstPage or pagination.currentPage == pagination.totalPages %}{% else %}
-      <li><a class="is-current">{{ pagination.currentPage }}</a></li>
+        <li><a class="is-current">{{ pagination.currentPage }}</a></li>
       {% endif %}
 
       {% if pagination.currentPage < secondLast %}
-      <li><a href="{{ nextPage | route(paginationString) }}">{{ nextPage }}</a></li>
+        <li><a href="{{ nextPage | route(paginationString) }}">{{ nextPage }}</a></li>
       {% endif %}
 
       {% if pagination.currentPage < thirdLast %}
-      <li><a href="{{ farNextPage | route(paginationString) }}">{{ farNextPage }}</a></li>
+        <li><a href="{{ farNextPage | route(paginationString) }}">{{ farNextPage }}</a></li>
       {% endif %}
 
       {% if pagination.currentPage < fourthLast %}
-      <li>&hellip;</li>
+        <li>&hellip;</li>
       {% endif %}
 
       <li><a {% if pagination.currentPage== pagination.totalPages %}class="is-current"

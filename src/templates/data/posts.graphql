@@ -5,7 +5,7 @@ query {
       _contentTypeName
       _enabledAt
       title
-      dek
+      deck
       author {
         name
       }
@@ -15,8 +15,8 @@ query {
         totalPages
         type
       }
-      featuredImage {
-        s3Key
+      featureImage {
+        path
       }
       bodyHtml
     }
