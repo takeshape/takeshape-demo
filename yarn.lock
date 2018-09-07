@@ -4417,7 +4417,7 @@ resolve-url@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
 
-resolve@^1.3.2:
+resolve@^1.3.2, resolve@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.8.1.tgz#82f1ec19a423ac1fbd080b0bab06ba36e84a7a26"
   dependencies:
@@ -5128,9 +5128,9 @@ table@^4.0.1, table@^4.0.3:
     slice-ansi "1.0.0"
     string-width "^2.1.1"
 
-takeshape-cli@^4.33.0:
-  version "4.33.0"
-  resolved "https://registry.yarnpkg.com/takeshape-cli/-/takeshape-cli-4.33.0.tgz#1edd71decdb01262705032b0c43a3a22efc9445a"
+takeshape-cli@^4.46.0:
+  version "4.46.0"
+  resolved "https://registry.yarnpkg.com/takeshape-cli/-/takeshape-cli-4.46.0.tgz#bb3c449576fbbb555efaa4cb22cbaffdeb541fcc"
   dependencies:
     archiver "^1.3.0"
     async-retry "^1.2.1"
@@ -5151,11 +5151,11 @@ takeshape-cli@^4.33.0:
     pusher-client "^1.1.0"
     request "^2.79.0"
     stream-to-promise "^2.2.0"
-    takeshape-ssg "^4.33.0"
+    takeshape-ssg "^4.46.0"
 
-takeshape-ssg@^4.33.0:
-  version "4.33.0"
-  resolved "https://registry.yarnpkg.com/takeshape-ssg/-/takeshape-ssg-4.33.0.tgz#62fe66d3de26b6afef48c9d7aa19bc1e7d37c4e8"
+takeshape-ssg@^4.46.0:
+  version "4.46.0"
+  resolved "https://registry.yarnpkg.com/takeshape-ssg/-/takeshape-ssg-4.46.0.tgz#8254a6bd9a343a20e4eac4b97323181d5b2a7902"
   dependencies:
     bluebird "^3.4.6"
     commonmark "^0.27.0"
@@ -5174,6 +5174,7 @@ takeshape-ssg@^4.33.0:
     pluralize "^7.0.0"
     prismjs "^1.9.0"
     query-string "^4.2.3"
+    resolve "^1.8.1"
     slugg "^1.1.0"
     slugify "^1.0.2"
     vm2 "^3.4.6"
