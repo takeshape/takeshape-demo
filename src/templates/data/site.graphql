@@ -1,7 +1,6 @@
 query {
   settings: getSiteSettings {
     siteTitle
-    copyright
   }
   books: getBookList {
     total
