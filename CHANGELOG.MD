@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Changed
 - Update takeshape-cli dependency
 
+#### Added
+- Tags now appear on posts
+
 ## [1.2.0] - 2018-09-04
 #### Changed
 - **Breaking** Use `deck` instead of `dek' and `featureImage` instead of `featuredImage`

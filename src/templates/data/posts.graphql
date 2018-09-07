@@ -5,15 +5,12 @@ query {
       _contentTypeName
       _enabledAt
       title
+      tags {
+        name
+      }
       deck
       author {
         name
-      }
-      associatedBook {
-        title
-        publishDate
-        totalPages
-        type
       }
       featureImage {
         path

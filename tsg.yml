@@ -18,7 +18,7 @@ routes:
 
   posts:
     path: /blog/:title/
-    template: pages/posts/post.html
+    template: pages/posts/individual.html
     paginate:
       pageSize: 4
       path: /blog/page-:num/
